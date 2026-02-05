@@ -296,7 +296,7 @@ export default function LandingPage() {
           <div className="section-desc">CARS pays a flat fee. Sells donor intelligence profiles back to partners — the same way you already deliver reports, marketing, and analytics.</div>
 
           <div className="econ-row">
-            <div className="econ-card a"><div className="label">Frame Shift Engagement Engine</div><div className="number">$4,800 + 1% of net</div><div className="detail">/month — handles 5–7K messages/day, 24/7, no sick days, no Saturday overtime</div></div>
+            <div className="econ-card a"><div className="label">Frame Shift Engagement Engine</div><div className="number">$5,800 + 1% of net</div><div className="detail">/month — handles 5–7K messages/day, 24/7, no sick days, no Saturday overtime</div></div>
             <div className="econ-card g"><div className="label">Capacity</div><div className="number">5–7K</div><div className="detail">iMessages/day via Linq — covers full donor volume</div></div>
             <div className="econ-card p"><div className="label">Partners</div><div className="number">8,400</div><div className="detail">Receive enhanced profiles alongside existing reports</div></div>
           </div>
@@ -333,6 +333,32 @@ export default function LandingPage() {
               If the AI deflects even 500 calls/month — routine status checks, DMV questions, tax form timing — that&apos;s $4,000–$7,500/month in support cost savings. The platform nearly pays for itself before CARS charges a single partner for data. And your reps get freed up for the complex, high-touch calls that actually need a human.
             </p>
           </div>
+
+          {/* Pilot Section */}
+          <div style={{ margin: '36px 0', padding: '28px', background: 'var(--green-dim)', border: '2px solid var(--green)', borderRadius: 18 }}>
+            <div style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--green)', letterSpacing: 2, textTransform: 'uppercase', marginBottom: 10 }}>Step One — The Pilot</div>
+            <div style={{ fontFamily: 'var(--serif)', fontSize: 24, marginBottom: 16 }}>90 days. Cost basis only. Prove it or kill it.</div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+              <div style={{ padding: 18, background: 'var(--bg)', borderRadius: 12, border: '1px solid var(--border)' }}>
+                <div style={{ fontSize: 11, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>Setup</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 24, color: 'var(--green)' }}>$2,000</div>
+                <div style={{ fontSize: 12, color: 'var(--text-dim)', marginTop: 4 }}>One-time — form build, NAV integration, AI training on CARS processes</div>
+              </div>
+              <div style={{ padding: 18, background: 'var(--bg)', borderRadius: 12, border: '1px solid var(--border)' }}>
+                <div style={{ fontSize: 11, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>Monthly</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 24, color: 'var(--green)' }}>$250</div>
+                <div style={{ fontSize: 12, color: 'var(--text-dim)', marginTop: 4 }}>Covers AI inference and iMessage costs during pilot — no markup</div>
+              </div>
+            </div>
+            <p style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 16, lineHeight: 1.7 }}>
+              I&apos;m not trying to make money on the pilot. I want to prove this works. If it doesn&apos;t deliver measurable value — call deflection, donor data quality, partner feedback — we shake hands and walk away. If it does, we move to production pricing.
+            </p>
+          </div>
+
+          {/* Closing Paragraph */}
+          <p style={{ fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.8, marginTop: 24, maxWidth: 640 }}>
+            Your website says &ldquo;lifelong donor engagement begins with CARS.&rdquo; This is the mechanism to deliver on that promise — not as a tagline, but as a product. Capture why donors give. Stay connected through the lifecycle. Hand partners a relationship, not just a check.
+          </p>
 
         </section>
 
