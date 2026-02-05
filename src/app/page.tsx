@@ -296,7 +296,7 @@ export default function LandingPage() {
           <div className="section-desc">CARS pays a flat fee. Sells donor intelligence profiles back to partners — the same way you already deliver reports, marketing, and analytics.</div>
 
           <div className="econ-row">
-            <div className="econ-card a"><div className="label">Frame Shift Engagement Engine</div><div className="number">$4,800</div><div className="detail">/month — handles 5–7K messages/day, 24/7, no sick days, no Saturday overtime</div></div>
+            <div className="econ-card a"><div className="label">Frame Shift Engagement Engine</div><div className="number">$4,800 + 1% of net</div><div className="detail">/month — handles 5–7K messages/day, 24/7, no sick days, no Saturday overtime</div></div>
             <div className="econ-card g"><div className="label">Capacity</div><div className="number">5–7K</div><div className="detail">iMessages/day via Linq — covers full donor volume</div></div>
             <div className="econ-card p"><div className="label">Partners</div><div className="number">8,400</div><div className="detail">Receive enhanced profiles alongside existing reports</div></div>
           </div>
