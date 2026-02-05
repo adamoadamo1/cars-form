@@ -175,7 +175,7 @@ export default function LandingPage() {
           </div>
           <div className="hero-ctas">
             <Link href="/donate" className="cta-button primary">Try the Form Demo →</Link>
-            <Link href="/imessage-demo" className="cta-button secondary">See AI in Action →</Link>
+            <Link href="/imessage-demo" className="cta-button secondary">Agentic iMessage Demo →</Link>
           </div>
         </div>
 
@@ -344,9 +344,8 @@ export default function LandingPage() {
           <p style={{ fontSize: 16, lineHeight: 1.8, marginBottom: 24 }}>
             You already deliver marketing, reports, analytics, branded pages, and CAMM automation. Zero-party donor profiles are a natural extension — <strong style={{ color: 'var(--text)' }}>the mechanism to deliver on the promise you&apos;re already making</strong>.
           </p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 32 }}>
             <a href="mailto:adamlinssen@gmail.com?cc=hello@frameshiftvideo.com&amp;subject=Let's%20Do%20It" className="cta-button primary">Let&apos;s talk →</a>
-            <a href="/imessage-demo" className="cta-button secondary">See the demo</a>
           </div>
           <div className="sig">Adam Linssen · Frameshift · San Diego, CA<br/>adamlinssen@gmail.com · (858) 518-5567</div>
         </div>
