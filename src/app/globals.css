@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warm parchment background */
+  --bg-start: #faf8f4;
+  --bg-mid: #f3ede5;
+  --bg-end: #ebe4d9;
+
+  /* Text colors */
+  --text-primary: #1a1612;
+  --text-secondary: #9a8e7e;
+  --text-tertiary: #c0b5a5;
+
+  /* Borders */
+  --border-light: #e4ddd2;
+  --border-medium: #d4cdc2;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-nunito);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(175deg, var(--bg-start), var(--bg-mid) 50%, var(--bg-end));
+  color: var(--text-primary);
+  font-family: var(--font-nunito), sans-serif;
+}
+
+/* Desktop: darker background so card stands out */
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(175deg, #efe9df, #e5ddd0 50%, #dbd2c4);
+  }
+}
+
+::selection {
+  background: rgba(224, 122, 95, 0.2);
+}
+
+input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* Confetti animation */
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-20px) translateX(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(var(--drift)) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Completion screen animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Smooth transitions for interactive elements */
+.transition-interaction {
+  transition: all 0.25s ease;
+}
+
+.transition-screen {
+  transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-car {
+  transition: all 0.8s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
