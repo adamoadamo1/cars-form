@@ -17,6 +17,9 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "CARS Vehicle Donation",
   description: "Donate your vehicle to support the cause you care about most. Free pickup, tax deductible.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
